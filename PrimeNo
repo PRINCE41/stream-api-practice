@@ -1,0 +1,11 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.stream.IntStream;
+
+class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(IntStream.range(2, (int)Math.sqrt(n) + 1)
+        .noneMatch(i -> n % i == 0));
+    }
+}
